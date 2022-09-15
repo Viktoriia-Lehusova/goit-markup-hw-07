@@ -1,0 +1,27 @@
+.clients .list {
+  display: flex;
+  justify-content: center;
+}
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  color: #afb1b8;
+  background-color: var(--background-color);
+
+  transition: color var(--transition), border var(--transition);
+}
+.clients .item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid #2196f3;
+  color: var(--accent-color);
+}

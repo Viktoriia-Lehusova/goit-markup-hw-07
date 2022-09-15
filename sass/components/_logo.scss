@@ -1,0 +1,44 @@
+.logo {
+  color: var(--main-text-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo:hover,
+.logo:focus {
+  color: var(--main-text-color);
+}
+.part-logo {
+  color: var(--background-color);
+  display: inline-block;
+
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  margin-bottom: 20px;
+}
+
+.part-logo:hover,
+.part-logo:focus {
+  color: var(--background-color);
+}
+
+.side-logo {
+  color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.side-logo:hover,
+.side-logo:focus {
+  color: var(--accent-color);
+}

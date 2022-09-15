@@ -1,0 +1,131 @@
+.footer {
+  background-color: var(--footer-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress {
+  color: var(--background-color);
+
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+}
+.adress-container {
+  margin-right: 70px;
+}
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.second-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: var(--white-rgba-color);
+
+  transition: color var(--transition);
+}
+.second-link.mail {
+  display: inline-block;
+}
+.second-link:hover,
+.second-link:focus {
+  color: var(--accent-color);
+}
+.join-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: inherit;
+  text-transform: uppercase;
+
+  color: var(--background-color);
+}
+.footer-join .list {
+  display: flex;
+  justify-content: center;
+}
+.footer-join {
+  margin-right: 93px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.join-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+
+  color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color var(--transition);
+}
+.footer-join .item:not(:last-child) {
+  margin-right: 10px;
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-color);
+}
+.footer-label {
+  display: flex;
+}
+.join-input {
+  width: 358px;
+  height: 50px;
+
+  color: var(--white-rgba-color);
+
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  background-color: var(--footer-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.join-input::placeholder {
+  font-size: 16px;
+  line-height: 1.25;
+
+  align-items: center;
+
+  color: var(--white-rgba-color);
+}
+.join-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 28px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color var(--transition);
+}
+.join-button:hover,
+.join-button:focus {
+  background-color: #188ce8;
+}
+.icon-send {
+  margin-left: 10px;
+}

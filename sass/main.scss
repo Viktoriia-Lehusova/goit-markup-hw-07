@@ -1,2 +1,21 @@
 @import './utils/vars';
+@import './utils/visually-hidden';
+
 @import './base/common';
+@import './base/section';
+@import './base/container';
+
+@import './components/logo';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/works';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/portfolio-filtr';
+@import './layout/portfolio-list';
+@import './layout/footer';
