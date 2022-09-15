@@ -13,9 +13,10 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition), scale var(--transition);
-}
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .close-button {
@@ -37,9 +38,10 @@
   cursor: pointer;
 
   transition: color var(--transition);
-}
-.close-button:hover,
-.close-button:focus {
-  color: var(--accent-color);
-  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: currentColor;
+  }
 }
