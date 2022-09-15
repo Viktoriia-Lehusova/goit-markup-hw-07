@@ -57,13 +57,14 @@
   fill: var(--main-text-color);
 
   transition: fill var(--transition);
+
+  .input-field:focus-within &,
+  .input-field:hover & {
+    fill: currentColor;
+    color: #2196f3;
+  }
 }
 
-.input-field:focus-within &,
-.input-field:hover & {
-  fill: currentColor;
-  color: #2196f3;
-}
 .textarea {
   width: 448px;
   height: 120px;

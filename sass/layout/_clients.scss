@@ -1,6 +1,14 @@
-.clients .list {
+.clients-list {
   display: flex;
   justify-content: center;
+}
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-bottom: 50px;
 }
 .clients-link {
   display: flex;
@@ -16,12 +24,13 @@
   background-color: var(--background-color);
 
   transition: color var(--transition), border var(--transition);
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    color: var(--accent-color);
+  }
 }
-.clients .item:not(:last-child) {
+.clients-item:not(:last-child) {
   margin-right: 30px;
-}
-.clients-link:hover,
-.clients-link:focus {
-  border: 1px solid #2196f3;
-  color: var(--accent-color);
 }
