@@ -17,24 +17,22 @@
   background-size: cover;
 }
 .hero-title {
-  color: var(--background-color);
   letter-spacing: 0.06em;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(900, 44px, 1.36);
   text-transform: uppercase;
 
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+
+  color: var(--background-color);
 }
 .hero-button {
   padding: 10px 32px;
   min-width: 216px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($lh: 1.88);
+
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;

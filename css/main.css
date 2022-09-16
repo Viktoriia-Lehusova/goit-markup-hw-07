@@ -10,6 +10,18 @@
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.join-button, .join-link, .clients-link, .team-link, .work-text, .privacy-text, .close-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -162,15 +174,6 @@ button {
 
 .close-button {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   top: 8px;
   right: 8px;
   border-radius: 50%;
@@ -293,23 +296,7 @@ button {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.textarea::-webkit-input-placeholder:focus, .textarea::-webkit-input-placeholder:hover {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-.textarea::-moz-placeholder:focus, .textarea::-moz-placeholder:hover {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-.textarea:-ms-input-placeholder:focus, .textarea:-ms-input-placeholder:hover {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-.textarea::-ms-input-placeholder:focus, .textarea::-ms-input-placeholder:hover {
-  border: 1px solid var(--accent-color);
-  outline: none;
-}
-.textarea::placeholder:focus, .textarea::placeholder:hover {
+.textarea:focus, .textarea:hover {
   border: 1px solid var(--accent-color);
   outline: none;
 }
@@ -320,15 +307,6 @@ button {
 }
 
 .privacy-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--secondary-text-color);
@@ -377,7 +355,7 @@ button {
   min-width: 200px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.19;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -500,7 +478,6 @@ button {
 }
 
 .hero-title {
-  color: var(--background-color);
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
@@ -509,6 +486,7 @@ button {
   width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+  color: var(--background-color);
 }
 
 .hero-button {
@@ -555,8 +533,8 @@ button {
 
 .features-subtitle {
   margin-bottom: 10px;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -590,15 +568,6 @@ button {
 
 .work-text {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   bottom: 0;
   right: 0;
   height: 70px;
@@ -675,15 +644,6 @@ button {
 }
 
 .team-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -715,15 +675,6 @@ button {
 }
 
 .clients-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -906,8 +857,8 @@ button {
 .footer-text {
   margin-bottom: 20px;
   font-weight: 700;
-  line-height: 1.4;
   font-size: inherit;
+  line-height: 1.4;
   text-transform: uppercase;
   color: var(--background-color);
 }
@@ -937,15 +888,6 @@ button {
 }
 
 .join-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -1013,15 +955,6 @@ button {
 }
 
 .join-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 200px;
   padding: 10px 28px;
   font-weight: 700;

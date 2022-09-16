@@ -7,20 +7,18 @@
 }
 
 .work-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font($fs: 36px);
   text-align: center;
 
   margin-bottom: 50px;
 }
 .work-text {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   bottom: 0;
   right: 0;
+
+  @extend %align;
+
   height: 70px;
   width: 100%;
 

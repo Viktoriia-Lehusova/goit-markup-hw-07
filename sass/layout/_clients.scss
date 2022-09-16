@@ -3,17 +3,13 @@
   justify-content: center;
 }
 .clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font($fs: 36px);
   text-align: center;
 
   margin-bottom: 50px;
 }
 .clients-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align;
 
   width: 170px;
   height: 92px;

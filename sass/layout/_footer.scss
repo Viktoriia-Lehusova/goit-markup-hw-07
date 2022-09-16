@@ -42,9 +42,7 @@
 .footer-text {
   margin-bottom: 20px;
 
-  font-weight: 700;
-  line-height: 1.4;
-  font-size: inherit;
+  @include font(700, inherit, 1.4);
   text-transform: uppercase;
 
   color: var(--background-color);
@@ -66,9 +64,7 @@
   align-items: baseline;
 }
 .join-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align;
 
   border-radius: 50%;
   width: 44px;
@@ -114,15 +110,11 @@
 }
 
 .join-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align;
   width: 200px;
   padding: 10px 28px;
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font($lh: 1.88);
   text-align: center;
   letter-spacing: 0.06em;
 
